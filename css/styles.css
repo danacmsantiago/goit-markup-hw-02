@@ -5,6 +5,7 @@
   --cornflower: #e7e9fc;
   --ocean: #404bbf;
   --slate: #434455;
+  --white: #fff;
 }
 
 /* General Styles*/
@@ -12,11 +13,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  color: var(--slate, #434455);
+  letter-spacing: 0.03em;
+  color: var(--slate);
 }
 
 .list {
@@ -34,164 +32,160 @@ body {
 }
 
 .logo {
-  color: var(--iris, #4d5ae5);
+  color: var(--iris);
 }
 
 .button {
-  font-family: inherit, sans-serif;
-  font-size: 16px;
-  font-style: normal;
+  border-color: transparent;
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.03em;
   cursor: pointer;
+}
+
+.button.primary {
+  color: white;
+  background-color: var(--iris);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--ocean);
 }
 
 .section-title {
   font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  color: var(--navyblue, #2e2f42);
+  line-height: 1.17;
+  color: var(--navyblue);
   text-align: center;
 }
 
-.title {
+.benefits .title {
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.4px;
-  color: var(--slate, #434455);
+  color: var(--navyblue);
+}
+
+.benefits .description {
+  color: var(--slate);
+  line-height: 1.71;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* Header */
 
 .studio {
-  color: var(--navyblue, #2e2f42);
+  color: var(--navyblue);
 }
 
-.item {
-  color: var(--slate, #434455);
+.contacts-menu .item {
+  color: var(--slate);
   text-decoration: none;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.page {
+.nav-menu .page {
   font-weight: 500;
-  color: var(--navyblue, #2e2f42);
+  color: var(--navyblue);
   text-decoration: none;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.page:hover {
-  color: var(--ocean, #404bbf);
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+  color: var(--iris);
 }
 
-.page:focus {
-  color: var(--ocean, #404bbf);
-}
-
-.page:active {
-  color: var(--ocean, #404bbf);
-}
-
-.current {
-  color: var(--ocean, #404bbf);
+.bg-hero {
+  background-color: var(--navyblue);
 }
 
 /* Hero Section - Section 1 */
 
-.hero {
-  background: var(--navyblue, #2e2f42);
+/* .hero {
+  background: var(--navyblue);
   text-align: center;
-}
+} */
 
 .hero-title {
   font-size: 56px;
+  text-align: center;
   line-height: 1.07;
-  letter-spacing: 1.12px;
-  color: var(--white, #fff);
-}
-
-.hero .primary {
-  background: var(--iris, #4d5ae5);
-  color: var(--white, #fff);
-}
-
-.hero .primary:hover {
-  background: var(--ocean, #404bbf);
-}
-
-.hero .primary:focus {
-  background: var(--ocean, #404bbf);
-}
-
-.hero .primary:active {
-  background: var(--ocean, #404bbf);
+  letter-spacing: 0.04em;
+  color: var(--white);
 }
 
 /* Our Team - Section 4 */
 
 .bg-team {
-  background: var(--cloud, #f4f4fd);
+  background: var(--cloud);
 }
 
-.name {
+.team .name {
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.4px;
-  color: var(--slate, #434455);
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+.team .position {
+  color: var(--slate);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* Footer */
 
-.page-footer {
-  background: var(--navyblue, #2e2f42);
+.page-footer.bg-footer {
+  background: var(--navyblue);
 }
 
 .studio-footer {
-  color: var(--cloud, #f4f4fd);
+  color: var(--cloud);
 }
 
 .footer-description {
-  color: var(--cloud, #f4f4fd);
+  color: var(--cloud);
 }
 
 /* Portfolio Page */
 
-.filter {
-  background: var(--cloud, #f4f4fd);
-  color: var(--iris, #4d5ae5);
+.button.filter {
+  background: var(--cloud);
+  color: var(--iris);
+  font-weight: 500;
+  line-height: 1.62;
 }
 
-.filter:hover {
-  background: var(--ocean, #404bbf);
-  color: var(--white, #fff);
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+  background: var(--ocean);
+  color: var(--cloud);
 }
 
-.filter:focus {
-  background: var(--ocean, #404bbf);
-  color: var(--white, #fff);
-}
-
-.filter:active {
-  background: var(--ocean, #404bbf);
-  color: var(--white, #fff);
-}
-
-.filters .current {
-  background: var(--ocean, #404bbf);
-  color: var(--white, #fff);
-}
-
-.name {
-  font-family: Roboto;
+.project .name {
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.4px;
-  color: var(--navyblue, #2e2f42);
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: var(--navyblue);
 }
 
-.type {
+.project .type {
   color: var(--slate, #434455);
+  font-weight: 400;
+  line-height: 1.87;
 }
 
 .project {
