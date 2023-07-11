@@ -63,19 +63,6 @@ body {
   text-align: center;
 }
 
-.benefits .title {
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--navyblue);
-}
-
-.benefits .description {
-  color: var(--slate);
-  line-height: 1.71;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 /* Header */
 
 .studio {
@@ -108,6 +95,7 @@ body {
 
 .bg-hero {
   background-color: var(--navyblue);
+  text-align: center;
 }
 
 /* Hero Section - Section 1 */
@@ -123,6 +111,21 @@ body {
   line-height: 1.07;
   letter-spacing: 0.04em;
   color: var(--white);
+}
+
+/* Benefits - Section 2 */
+
+.benefits .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navyblue);
+}
+
+.benefits .description {
+  color: var(--slate);
+  line-height: 1.71;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* Our Team - Section 4 */
